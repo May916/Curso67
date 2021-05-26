@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+
+<body>
+    <div>
+        <h1>Mi Formulario de Registro</h1>
+        <form action="/">
+            <label for="nombre">Nombre:   </label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <br>
+            <input type="email" name="email" id="email">
+            <label for="email">Email:</label>
+            <br>
+            <br>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <br>
+            <label for="Confirmar">Confirmar: </label>
+            <input type="text" id="Confirmar" name="Confirmar">
+            <br>
+            <br>
+            <hr>
+            <label for="Cumpleaños">Cumpleaños:</label>
+            <input type="date" name="Cumpleaños" id="Cumpleaños">
+            <hr>
+            <br>
+            <label for="masc">Masculino:</label>
+            <input type="radio" name="genero" id="masc" value="1">
+            <br>
+            <label for="fem">Femenino:</label>
+            <input type="radio" name="genero" id="fem" value="2">
+            <br>
+            <label for="otro">Otro:</label>
+            <input type="radio" name="genero" id="otro" value="3">
+            <br>
+            <br>
+            <br>
+            <label for="detalle">Una breve descripción de ti:</label>
+            <br>
+            <textarea name="detalle" id="detalle" cols="1" rows="1"></textarea>
+            <br>
+            <br>
+            <label for="Lenguaje">Lenguaje favorito: </label>
+            <br>
+            <br>
+            <select name="lenguajes" id="lenguajes">
+                <option value="0">JavaScript </option>
+                <option value="1"> Html</option>
+                <option value="2">CSS</option>
+                <option value="4">RoR</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Enviar...">
+        </form>
+    </div>
+</body>
+
+</html>
