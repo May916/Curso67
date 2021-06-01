@@ -1,0 +1,159 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        outline: red solid 1px;
+    }
+    
+    #container {
+        width: 950px;
+        min-height: 980px;
+        background-color: #1b0b0f;
+        background-image: radial-gradient( #6f5964 35%, #1b0b0f);
+        margin: 10px;
+    }
+    
+    #header {
+        width: 950px;
+        height: 60px;
+        background-color: rgb(226, 226, 226);
+        background-image: linear-gradient(180deg, rgb(226, 226, 226), white);
+    }
+    
+    h1 {
+        padding-left: 22px;
+        padding-top: 5px;
+        font-family: cursive;
+        display: inline-block;
+    }
+    
+    h2 {
+        padding-right: 26px;
+        margin-left: 310px;
+        font-family: sans-serif;
+        display: inline-block;
+    }
+    
+    #perfil {
+        display: inline-block;
+        background-color: silver;
+        margin: 20px;
+    }
+    
+    img {
+        width: 400px;
+        height: auto;
+        padding: 5px;
+    }
+    
+    #historia {
+        display: inline-block;
+        width: 476px;
+        height: 277px;
+        vertical-align: top;
+        margin-top: 20px;
+        background-color: white;
+        background-image: linear-gradient(to right, white 12%, silver);
+    }
+    
+    #about {
+        display: inline-block;
+        width: 476px;
+        height: 35px;
+        background-image: linear-gradient(silver, grey, silver);
+    }
+    
+    h3 {
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-left: 15px;
+        font-family: sans-serif;
+        display: inline-block;
+        color: white;
+    }
+    
+    p {
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    
+    a {
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        color: black;
+    }
+    
+    .cajas {
+        display: inline-block;
+        width: 288px;
+        height: 340px;
+        vertical-align: top;
+        margin-left: 19px;
+        background-color: white;
+        background-image: linear-gradient(to right, white 12%, silver);
+    }
+    
+    .info {
+        display: inline-block;
+        width: 288px;
+        height: 35px;
+        background-image: linear-gradient(silver, grey, silver);
+    }
+    
+    .fotoapp {
+        width: 282px;
+        height: auto;
+    }
+    
+    .textoinfo {
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    .cajas1 {
+        display: inline-block;
+        width: 288px;
+        height: 242px;
+        vertical-align: top;
+        margin-left: 19px;
+        background-color: white;
+        background-image: linear-gradient(to right, white 12%, silver);
+    }
+    
+    .info1 {
+        display: inline-block;
+        width: 288px;
+        height: 35px;
+        background-image: linear-gradient(silver, grey, silver);
+    }
+    
+    .fotoinfo {
+        display: inline-block;
+        width: 38px;
+        height: auto;
+        margin-top: 13px;
+        padding: 8px;
+    }
+    
+    input {
+        display: inline-block;
+        text-align: center;
+        background-color: #407d61;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+    
+    .boton {
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 10px;
+        border: solid 1px #1b0b0f;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        background-color: #407d61;
+        box-shadow: 5px 6px 5px grey;
+        margin-left: 90px;
+    }
