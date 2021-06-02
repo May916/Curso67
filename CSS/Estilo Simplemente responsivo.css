@@ -1,0 +1,46 @@
+.container {
+    overflow: auto;
+}
+
+h1 {
+    width: auto;
+    margin: 10px;
+    padding: 16px;
+    font-family: arial;
+    text-align: left;
+    background-color: #b3b3b3;
+}
+
+p {
+    width: auto;
+    margin: 10px;
+    padding: 16px 16px 20px;
+    font-family: arial;
+    text-align: left;
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+@media screen and (min-width:1024px) {
+    .row {
+        width: 950px;
+        height: auto;
+    }
+    h1 {
+        width: 950px;
+        height: auto;
+        float: left;
+    }
+    p {
+        width: 950px;
+        height: auto;
+        float: left;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .row {
+        width: 950px;
+        float: left;
+    }
+}
