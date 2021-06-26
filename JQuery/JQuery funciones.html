@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //estructura base jquery --> $('').accion(function(){});
+            //click
+            $('#boton1').click(function() {
+                alert("Click en el boton 1")
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle(); //oculta o muestra un elemento
+            });
+            //slideUp
+            $('#boton5').click(function() {
+                $('#parrafo3').slideUp(3000);
+            });
+            //slideDown
+            $('#boton6').click(function() {
+                $('#parrafo3').slideDown(3000);
+            });
+            //slideToggle
+            $('#boton7').click(function() {
+                $('#parrafo3').slideToggle(3000);
+            });
+            //fadeOut
+            $('#boton8').click(function() {
+                $('#parrafo4').fadeOut(2000);
+            });
+            //fadeIn
+            $('#boton9').click(function() {
+                $('#parrafo4').fadeIn(2000);
+            });
+            //addClass
+            $('#parrafo5').click(function() {
+                $(this).addClass('colores fondos bg-info mt-2');
+            });
+            //Before
+            $('#boton10').click(function() {
+                $('#parrafo6').before('<p> este es el parrafo anterior <p>')
+            });
+            //after
+            $('#boton11').click(function() {
+                $('#parrafo7').after('<p> este es el parrafo posterior <p>')
+            });
+            //append
+            $('#boton12').click(function() {
+                $('#parrafo8').append('<p>Yo soy el nuevo contenido<p>')
+            });
+            //html
+            var pagina = "";
+            $('#btnHtml').click(function() {
+                //html -> reemplaza/obtiene el contenido del elemento
+                pagina = $('#container').html(); //consultar el contenido html del elemento
+                console.log($('#container').html());
+                $('#container').append(pagina);
+            });
+            //ATTR
+            $('#parrafo6').click(function() {
+                $('#container').append('<img src=tux.png>');
+                $('img').attr('width', '200px');
+                $('#parrafo6').attr('style', 'color:red;font-size: 25px;');
+                //$('#parrafo4').attr('id', 'parrafo5');
+                alert($('#parrafo6').attr('id')); //consultar el contenido del atributo
+            });
+            //VAL
+            $('#boton').click(function() {
+                //captura el valor como string
+                var texto1 = $('#text1').val();
+                var texto2 = $('#text2').val();
+
+                //validando si en un numero
+                if (isNaN(texto1)) {
+                    alert("No es un numero, despierta")
+                } else {
+
+                    //convertir a numero
+                    //Number(texto1); parseInt(texto1); parseFloat(texto1);
+                    alert(Number(texto1) + parseInt(texto1) + parseFloat(texto1));
+                    //alert(texto1 + texto2);
+
+                }
+
+            });
+
+            //fin JQuery
+        });
+    </script>
+    <style>
+        #container {
+            background-color: sandybrown;
+            text-align: center;
+            font-family: 'Segoe UI';
+        }
+        
+        .colores {
+            color: rgb(0, 225, 255);
+        }
+        
+        .fondos {
+            background-color: rgb(47, 33, 172);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Función Click</h1>
+        <p>clikea el botón para llamar al evento click </p>
+        <button id="boton1">función click</button>
+        <hr>
+        <h1>Función Hide,Show y Toggle</h1>
+        <p id="parrafo2">clickea el botón para llamar al evento hide y ocultar el parrafo </p>
+        <button id="boton2">función hide</button>
+        <button id="boton3">función show</button>
+        <button id="boton4">función Toggle</button>
+        <hr>
+        <h1>Función SlideUp, SlideDown y SlideToggle</h1>
+        <p id="parrafo3">clickea el boton para llamar el evento y deslizar el parrafo</p>
+        <button id="boton5">función slideUp</button>
+        <button id="boton6">función slideDown</button>
+        <button id="boton7">función slideToggle</button>
+        <hr>
+        <h1>Función FadeOut y FadeIn</h1>
+        <p id="parrafo4">clickea el boton para llamar el evento y difuminará el parrafo</p>
+        <button id="boton8">función fadeOut</button>
+        <button id="boton9">función fadeIn</button>
+        <hr>
+        <h1>ADDCLASS</h1>
+        <p id="parrafo5">Este es el parrafo 3</p>
+        <hr>
+        <h1>Función Before</h1>
+        <p id="parrafo6">Clickea el botón para llamar el evento y aparecerá otro parrafo antes de este.</p>
+        <button id="boton10">Función before</button>
+        <hr>
+        <h1>Función After</h1>
+        <p id="parrafo7">Clickea el botón para llamar el evento y aparecerá otro parrafo posterior de este.</p>
+        <button id="boton11">Función after</button>
+        <hr>
+        <h1>Función Append</h1>
+        <p id="parrafo8">Clickea el botón para llamar el evento y aparecerá otro contenido al final de este elemento.</p>
+        <button id="boton12">Función append</button>
+        <hr>
+        <h1>ATTR</h1>
+        <p id="parrafo5">Este es el parrafo 4</p>
+        <hr>
+        <h1>VAL</h1>
+        <input id="text1" type="number"><input id="text2" type="text">
+        <button id="boton">click para val</button>
+    </div>
+    <hr>
+    <button id="btnHtml">funcion html  </button>
+</body>
+
+</html>
